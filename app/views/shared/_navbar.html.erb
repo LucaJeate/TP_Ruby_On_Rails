@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TP_Ruby_On_Rails</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'Accueil', {:controller => 'pages', :action => 'home'}, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'A Propos', {:controller => 'pages', :action => 'about'}, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Mentions Legales', {:controller => 'pages', :action => 'terms'}, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Inscription', {:controller => 'registrations', :action => 'new'}, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Login', {:controller => 'pages', :action => 'login'}, class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
